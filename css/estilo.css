@@ -118,7 +118,7 @@ nav ul button:hover {
 }
 
 .custom-mt {
-  margin-top: 140px; /* Ajuste o valor conforme necessário */
+  margin-top: 130px; /* Ajuste o valor conforme necessário */
 }
 
 
@@ -175,6 +175,19 @@ nav ul button:hover {
 
 /* Catalogo - os demais estilizados pelo bootstrap*/
 
+
+.btn-custom {
+  background-color: var(--blue);
+  border-color: var(--gray);
+  color: #dedede;
+}
+
+.btn-custom:hover {
+  background-color: var(--gray);
+  border-color: #001a38;
+  color: var(--blue);
+  font-size: large;
+}
 
 
 /* Footer */

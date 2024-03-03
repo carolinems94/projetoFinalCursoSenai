@@ -9,15 +9,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/styles.css">
-
-
+    <link rel="stylesheet" href="css/estilo.css">
 
 </head>
 
 <body>
-
-
 
     <header>
         <div class="content">
@@ -46,6 +42,44 @@
             </div>
         </div>
     </header>
+
+    <div class="container custom-mt">
+        <div class="row">
+            <div class="col mt-4">
+                <?php
+                $paginaParaCarregar = $_GET["page"] ?? "nada em page";
+
+                include("config.php");
+                switch ($paginaParaCarregar) {
+                    case "atuarNoBanco":
+                        include("atuarNoBanco.php");
+                        break;
+                    case "cadastro":
+                        include("cadastro.php");
+                        break;
+                    case "vercarros":
+                        include("vercarros.php");
+                        break;
+                    case "edicao":
+                        include("edicao.php");
+                        break;
+                    case "exclusao":
+                        include("exclusao.php");
+                        break;
+                    case "politicacookies":
+                        include("politicacookies.php");
+                        break;
+                    case "catalogo":
+                        include("catalogo.php");
+                        break;
+                    default:
+                        include("boasvindas.php");
+                }
+                ?>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 <footer>
@@ -61,14 +95,13 @@
             <div class="footer-contact">
                 <h4>Contatos</h4>
                 <h6>+55 71 999999999</h6>
-                <h6>audicar@senai.com.br</h6>
+                <h6>carolinecar@senai.com.br</h6>
                 <h6>Nome da Rua, Salvador BA</h6>
             </div>
         </div>
     </div>
-    <!-- <div class="last"><a class="last nav-link" href="?page=politicacookies">CarolCar 2024 - Política de Cookies</a>
-    </div> -->
+    <div class="last"><a class="last nav-link" href="?page=politicacookies">CarolCar 2024 - Política de Cookies</a>
+    </div>
 </footer>
-
 
 </html>
