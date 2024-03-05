@@ -1,3 +1,17 @@
+<?php 
+    session_start();
+    if(empty($_SESSION)){
+   echo "<script>
+        alert('Permissão negada! Somente administrador pode cadastrar veículo. Se você é usuário administrador, acesse a página de login!')
+    </script>";
+    echo
+    "<script>
+        location.href='?page=index.php'
+    </script>";
+
+    }
+?>
+
 <h3>Página de Cadastro: </h3>
 
 <form action="?page=atuarNoBanco" method="post" class="mt-4">

@@ -18,9 +18,9 @@ if ($qtdLinhas > 0) {
                 <div class='card-body d-flex flex-column align-items-center'>
                     <img src='imagens/car-card.png' alt='Car' />
                     <!--<h5>Nº registro: {$produto['id']}</h5>-->
-                    <h4>{$produto['marca']} {$produto['modelo']}</h4>
-                    <h6>Ano {$produto['ano']}</h6>
-                    <h6>R$ {$produto['preco']}</h6>
+                    <h5>{$produto['marca']} {$produto['modelo']}</h5>
+                    <h6><strong>Ano: </strong> {$produto['ano']}</h6>
+                    <h6><strong>Valor:</strong> R$ {$produto['preco']},00</h6><br>
                     
                     <button class='btn btn-custom' onclick=\"location.href='?page=catalogo'\">Ver mais detalhes</button>
 

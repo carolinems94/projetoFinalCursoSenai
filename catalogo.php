@@ -20,11 +20,11 @@ if ($qtdLinhas > 0) {
                     <img src='imagens/car-card.png' alt='Car' />
                     <!--<h4>Nº registro: {$produto['id']}</h4>-->
                     <h5>{$produto['marca']} {$produto['modelo']}</h5>
-                    <p>Ano: {$produto['ano']}</p> 
-                    <p>Valor: {$produto['preco']}</p>
-                    <p>Km atual: {$produto['km']}</p>
-                    <p>Câmbio: {$produto['cambio']}</p>
-                    <p>Descrição: {$produto['descricao']}</p>
+                    <p><strong>Ano: </strong>{$produto['ano']}</p> 
+                    <p><strong>Valor:</strong> {$produto['preco']}</p>
+                    <p><strong>Km atual:</strong> {$produto['km']}</p>
+                    <p><strong>Câmbio:</strong> {$produto['cambio']}</p>
+                    <p><strong>Descrição:</strong> {$produto['descricao']}</p>
 
                     <form action=\"?page=atuarNoBanco\" method=\"post\">
                     <input type=\"hidden\" name=\"acao\" value=\"comprar\">

@@ -23,11 +23,12 @@
                 </div>
                 <ul>
                     <li><a class="nav-link" href="index.php"></a></li>
-                    <li><a class="nav-link" href="?page=catalogo">Catálogo Completo</a></li>
+                    <li><a class="nav-link" href="?page=catalogo">Catálogo completo</a></li>
                     <li><a class="nav-link" href="?page=vercarros">Editar catálogo</a></li>
-                    <li><a class="nav-link" href="?page=cadastro">Cadastrar novo veiculo</a></li>
+                    <li><a class="nav-link" href="?page=cadastro">Cadastrar novo veículo</a></li>
 
-                    <button>Login</button>
+                    <button><a href="?page=acesso" class="nav-link" >Login</a></button>
+                    <button><a href="logout.php" class="nav-link" >Sair</a></button>
                 </ul>
             </nav>
             <div class="header-block">
@@ -72,6 +73,12 @@
                     case "catalogo":
                         include("catalogo.php");
                         break;
+                    case "acesso":
+                        include("acesso.php");
+                        break;
+                        case "logout":
+                            include("logout.php");
+                            break;
                     default:
                         include("boasvindas.php");
                 }
@@ -95,12 +102,12 @@
             <div class="footer-contact">
                 <h4>Contatos</h4>
                 <h6>+55 71 999999999</h6>
-                <h6>carolinecar@senai.com.br</h6>
+                <h6>audicar@caroline.martins.senai.com.br</h6>
                 <h6>Nome da Rua, Salvador BA</h6>
             </div>
         </div>
     </div>
-    <div class="last"><a class="last nav-link" href="?page=politicacookies">CarolCar 2024 - Política de Cookies</a>
+    <div class="last"><a class="last nav-link" href="?page=politicacookies">Audicar 2024 - Política de Cookies</a>
     </div>
 </footer>
 

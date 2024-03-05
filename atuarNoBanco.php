@@ -12,7 +12,7 @@ switch ($acaoASerFeita) {
         $descricao = $_POST["descricao"];
 
         $sql = "INSERT INTO carrosinicial(id, marca, modelo, ano, preco, km, cambio, descricao) 
-                VALUES('DEFAULT', '{$marca}', '{$modelo}', '{$ano}', '{$preco}', '{$km}', '{$cambio}', '{$descricao}');";
+                VALUES('DEFAULT', '{$marca}', '{$modelo}', '{$ano}', '{$preco}', '{$km}', '{$cambio}', '{$descricao}')";
 
         $resultado = $conexao->query($sql);
 
@@ -72,7 +72,6 @@ switch ($acaoASerFeita) {
         </script>";
         }
 
-
         break;
     case "deletar":
         $id = $_POST["id"];
@@ -113,7 +112,7 @@ switch ($acaoASerFeita) {
                     </script>";
                 echo
                 "<script>
-                        location.href=\"?page=vercarros\";
+                        location.href=\"?page=catalogo\";
                     </script>";
             } else {
                 "<script>

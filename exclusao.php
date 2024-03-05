@@ -1,3 +1,4 @@
+
 <?php
 $id = $_GET["id"];
 $sql = "SELECT * FROM carrosinicial
@@ -24,7 +25,7 @@ if ($quantidadeLinhas > 0) {
                 <input type=\"hidden\" name=\"id\" value=\"{$carro['id']}\">
                 <button type=\"submit\" class=\"btn btn-success\">Sim</button>
                 </form>
-                 <button class=\"btn btn-danger mt-2\" onclick=\"location.href='?page=vercarros'\">Não</button>
+                 <button class=\"btn btn-danger mt-2\" onclick=\"location.href='?page=catalogo'\">Não</button>
                
             </div>    
         </div>";

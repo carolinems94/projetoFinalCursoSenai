@@ -1,3 +1,17 @@
+<?php 
+    session_start();
+    if(empty($_SESSION)){
+   echo "<script>
+        alert('Permissão negada, somente admistrador pode cadastrar veiculo, se você é usuario adm acesse a pagina de login!')
+    </script>";
+    echo
+    "<script>
+        location.href='?page=index.php'
+    </script>";
+
+    }
+?>
+
 <h2>Todos os carros do catálogo: </h2>
 
 <?php

@@ -1,3 +1,16 @@
+<?php 
+    session_start();
+    if(empty($_SESSION)){
+   echo "<script>
+        alert('Permissão negada! Somente administrador pode cadastrar veículo. Se você é usuário administrador, acesse a página de login!')
+    </script>";
+    echo
+    "<script>
+        location.href='?page=index.php'
+    </script>";
+
+    }
+?>
 
 <?php 
     $id = $_GET["id"];
