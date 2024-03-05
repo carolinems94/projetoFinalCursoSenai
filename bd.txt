@@ -14,18 +14,9 @@ COMANDOS USADOS PARA CRIAÇÃO DO BD:
    	descricao VARCHAR(300)
 );
 
-<<<<<<< HEAD
 2 - USE carrosinicial;
-    CREATE TABLE usuarios(
-    	id INT AUTO_INCREMENT PRIMARY KEY,
-    	usuario VARCHAR(100),
-    	senha VARCHAR(100),
-    	cargo INT
-=======
-2 - USE carrosrev;
-    CREATE TABLE usuarios(
+	CREATE TABLE usuarios(
     	id INT AUTO_INCREMENT PRIMARY KEY,
     	usuario VARCHAR(100),
     	senha VARCHAR(100)
->>>>>>> dev
 );
