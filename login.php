@@ -23,7 +23,7 @@
 
         if($qtdLinhas > 0){
             $_SESSION["usuario"] = $usuario;
-            $_SESSION["cargo"] = $linha->cargo;
+            //$_SESSION["cargo"] = $linha->cargo;
             echo
             "<script>
                 location.href='index.php?page=vercarros'

@@ -1,3 +1,7 @@
+<?php 
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -8,6 +12,7 @@
     <title>Compra de Carro</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="imagens/icons-carro.png">
 
     <link rel="stylesheet" href="css/estilo.css">
 
@@ -22,10 +27,10 @@
                     <a class="titulo" href="index.php">AudiCar</a>
                 </div>
                 <ul>
-                    <li><a class="nav-link" href="index.php"></a></li>
-                    <li><a class="nav-link" href="?page=catalogo">Catálogo completo</a></li>
-                    <li><a class="nav-link" href="?page=vercarros">Editar catálogo</a></li>
-                    <li><a class="nav-link" href="?page=cadastro">Cadastrar novo veículo</a></li>
+                    <li><a href="index.php" class="nav-link" ></a></li>
+                    <li><a href="?page=catalogo" class="nav-link" >Catálogo completo</a></li>
+                    <li><a href="?page=vercarros" class="nav-link">Editar catálogo</a></li>
+                    <li><a href="?page=cadastro" class="nav-link">Cadastrar novo veículo</a></li>
 
                     <button><a href="?page=acesso" class="nav-link" >Login</a></button>
                     <button><a href="logout.php" class="nav-link" >Sair</a></button>
