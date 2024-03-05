@@ -22,7 +22,7 @@
 
 <div class="login-form">
     <h2>Login</h2>
-    <form action="login.php" method="post">
+    <form action="login.php" method="POST">
         <div class="mb-3">
             <label for="usuario" class="form-label">Usuário</label>
             <input type="text" class="form-control" name="usuario" placeholder="Digite o seu usuário" required>
@@ -35,4 +35,4 @@
             <button type="submit" class="btn btn-primary">Login</button>
         </div>
     </form>
-</div>
+</div>  

@@ -1,0 +1,22 @@
+COMANDOS USADOS PARA CRIAÇÃO DO BD:
+
+1 - CREATE DATABASE carrosrev;
+
+2 - USE carrosrev;
+    CREATE TABLE carrosinicial(
+    	id INT AUTO_INCREMENT PRIMARY KEY,
+    	marca VARCHAR(50),
+    	modelo VARCHAR(100),
+    	ano INT,
+        preco FLOAT,
+        km INT,
+        cambio VARCHAR(50),
+   	descricao VARCHAR(300)
+);
+
+2 - USE carrosrev;
+    CREATE TABLE usuarios(
+    	id INT AUTO_INCREMENT PRIMARY KEY,
+    	usuario VARCHAR(100),
+    	senha VARCHAR(100)
+);

@@ -1,7 +1,6 @@
 
 <script>
-        //pra alterações no codigo
-        alert("Aceita a politica de cookies desda pagina?");
+        alert("Você aceita a política de cookies desta página?");
     </script>
 
 <div class="container mt-3">

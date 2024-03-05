@@ -27,14 +27,13 @@ if ($qtdLinhas > 0) {
         echo 
         "<div class='card mt-4'>
             <div class='card-body'>
-                <h4>Nº registro: {$produto['id']}</h4>
-                <h5>Marca: {$produto['marca']}</h5>
-                <p>Modelo: {$produto['modelo']}</p> 
-                <p>Ano: {$produto['ano']}</p> 
-                <p>Valor: {$produto['preco']}</p>
-                <p>Km: {$produto['km']}</p>
-                <p>Câmbio: {$produto['cambio']}</p>
-                <p>Descricao: {$produto['descricao']}</p>
+                <p><strong>Marca:</strong> {$produto['marca']}</p>
+                <p><strong>Modelo:</strong> {$produto['modelo']}</p> 
+                <p><strong>Ano:</strong> {$produto['ano']}</p> 
+                <p><strong>Valor:</strong> R$ {$produto['preco']}</p>
+                <p><strong>Km:</strong> {$produto['km']}</p>
+                <p><strong>Câmbio:</strong> {$produto['cambio']}</p>
+                <p><strong>Descricao:</strong> {$produto['descricao']}</p>
                 
                 <button class='btn btn-success' onclick=\"location.href='?page=edicao&id={$produto['id']}'\">Editar</button>
                 <button class='btn btn-danger' onclick=\"location.href='?page=exclusao&id={$produto['id']}'\">Deletar</button>
