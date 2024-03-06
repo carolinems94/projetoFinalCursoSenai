@@ -1,9 +1,5 @@
 <h3> Catálogo COMPLETO: </h3>
 
-<form action="?page=catalogo" method="post" class="mt-4">
-    <input type="hidden" name="acao" value="cadastrar">
-
-
 <?php
 $sql = "SELECT * FROM carrosinicial";
 
